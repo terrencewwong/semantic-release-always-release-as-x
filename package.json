@@ -10,7 +10,15 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "commitmsg": "validate-commit-msg",
-    "precommit": "npm run lint && npm t"
+    "precommit": "npm run lint && npm t",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "standard": {
+    "globals": [
+      "expect",
+      "describe",
+      "it"
+    ]
   },
   "devDependencies": {
     "husky": "^0.13.3",

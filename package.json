@@ -1,0 +1,23 @@
+{
+  "name": "semantic-release-always-release-as-x",
+  "description": "configure the next type of release in package.json",
+  "main": "index.js",
+  "repository": "https://github.com/wongterrencew/semantic-release-always-release-as-x/",
+  "author": "Terrence Wong <wongterrencew@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard --verbose | snazzy",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "commitmsg": "validate-commit-msg",
+    "precommit": "npm run lint && npm t"
+  },
+  "devDependencies": {
+    "husky": "^0.13.3",
+    "jest": "^19.0.2",
+    "semantic-release": "^6.3.2",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2",
+    "validate-commit-msg": "^2.12.1"
+  }
+}
